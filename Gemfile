@@ -32,6 +32,24 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
+gem 'foundation-rails'
+
+group :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+	gem 'capybara'
+	gem 'cucumber-rails', require: false
+	gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.0' 
+  gem 'spork', '~> 1.0rc' 
+  gem 'shoulda-matchers'
+end
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt-ruby', '~> 3.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
